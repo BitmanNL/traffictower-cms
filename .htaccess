@@ -1,0 +1,42 @@
+#Deny directory listing
+Options -Indexes 
+
+# Disable magic quotes by default. Magic quotes are evil and break everything
+php_flag magic_quotes_gpc Off
+php_flag magic_quotes_runtime Off
+php_flag magic_quotes_sybase Off
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	# no access to .svn or it's content
+	RedirectMatch 404 /\\.svn(/.*|$)
+
+	# whitelist the files and directories that should be directly accessible
+	RewriteCond $1 !^(index\.php|assets|robots\.txt)
+
+	# Send everything else to index.php and stop the rewrite process
+	RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+<ifmodule mod_expires.c>
+	<Filesmatch "\.(jpg|jpeg|png|gif|swf|ico|woff|mp3)$">
+		ExpiresActive on
+		ExpiresDefault "access plus 1 month"
+	</Filesmatch>
+
+	<Filesmatch "\.(css|js)$">
+		ExpiresActive on
+		ExpiresDefault "access plus 1 week"
+	</Filesmatch>
+</ifmodule>
+
+<ifmodule mod_headers.c>
+	<FilesMatch "\.(jpg|jpeg|png|gif|swf|ico|woff|mp3)$">
+		Header set Cache-Control "max-age=2592000, s-maxage=2592000, public, no-transform"
+	</FilesMatch>
+
+	<FilesMatch "\.(css|js)$">
+		Header set Cache-Control "max-age=604800, s-maxage=604800, public, no-transform"
+	</FilesMatch>
+</ifmodule>

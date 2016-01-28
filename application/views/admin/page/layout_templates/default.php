@@ -1,0 +1,1 @@
+<?=string_empty($content)?>

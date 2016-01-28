@@ -1,0 +1,43 @@
+{
+    "name": "bitmannl/traffictower",
+    "description": "Open source content management system made with CodeIgniter",
+    "type": "project",
+    "keywords": [
+        "content",
+        "management",
+        "system",
+        "cms",
+        "traffictower",
+        "bitman"
+    ],
+    "homepage": "https://bitman.nl",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Daan Porru",
+            "role": "Developer"
+        },
+        {
+            "name": "Jeroen de Graaf",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "rogeriopradoj/codeigniter": "2.2.0",
+        "bitmannl/codeigniter-modular-extensions": "1.0.0",
+        "firephp/firephp-core": "0.4.0",
+        "bitmannl/codeigniter-curl": "dev-master",
+        "bitmannl/bcrypt": "1.0.1",
+        "bitmannl/image_moo": "1.1.6",
+        "bitmannl/codeigniter-piwik": "1.0.0"
+    },
+    "require-dev": {
+        "less.php/less.php": "1.7.*"
+    },
+    "autoload": {
+        "classmap": [
+            "traffictower/core",
+            "application/core"
+        ]
+    }
+}

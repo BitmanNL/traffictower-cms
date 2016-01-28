@@ -1,0 +1,17 @@
+/* Give floated images in text a margin etc */
+img[style*="float:left"],
+img[style*="float: left"] {
+	margin: 0 10px 10px 0;
+}
+img[style*="float:right"],
+img[style*="float: right"] {
+	margin: 0 0 10px 10px;
+}
+
+body {
+	font-size: 14px;
+    line-height: 1.42857;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0px 12px;
+    margin: 0;
+}

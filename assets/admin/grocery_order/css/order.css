@@ -1,0 +1,13 @@
+#grocery-order .table-order-column {
+	width: 16px;
+}
+
+#grocery-order tbody tr:hover {
+	background-color: #EEEEEE;
+	cursor: move;
+}
+
+
+#grocery-order tbody tr.ui-sortable-helper {
+	background-color: #FCF8E3;
+}

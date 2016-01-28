@@ -1,0 +1,7 @@
+#flex1 thead tr th:first-child, #flex1 thead tr th:nth-child(2){
+	width:36px;
+}
+
+div[rel=weergeven]{
+	display:none;
+}

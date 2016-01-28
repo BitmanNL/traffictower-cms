@@ -1,0 +1,1 @@
+<a class="help-general pull-right" href="<?=site_url('admin/help/index/'.$help_page['id'].'/'.url_title($help_page['title'], '-', TRUE))?>" title="Hulp nodig?">?</a>

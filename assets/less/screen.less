@@ -1,0 +1,31 @@
+/**
+ * Irritating dotted line around links removal
+ */
+a, a:focus, a:hover {
+	outline: none;
+	outline-style: none;
+	-moz-outline-style: none;
+}
+
+.element-text {
+	/**
+	 * img auto scale - only standard on the images in text (tinymce). normally use img-responsive 
+	 */
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	/**
+	 * Give floated images in text (tinymce) a margin etc
+	 */
+	img[style*="float:left"],
+	img[style*="float: left"] {
+		margin: 0 10px 10px 0;
+	}
+	img[style*="float:right"],
+	img[style*="float: right"] {
+		margin: 0 0 10px 10px;
+	}
+}

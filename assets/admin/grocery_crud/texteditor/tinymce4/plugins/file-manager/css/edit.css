@@ -1,0 +1,85 @@
+#fm-editor-controls {
+    float: left;
+}
+
+.fm-zoom-label {
+    line-height: 30px;
+
+    display: inline-block;
+
+    height: 30px;
+}
+
+#fm-zoom-percentage {
+    width: 4em;
+    margin-right: 4px;
+}
+
+.fm-short-range {
+    width: 6em;
+}
+
+.fm-sidebar-item-heading {
+    font-weight: bold;
+    line-height: 30px;
+
+    height: 30px;
+    padding: 0 10px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.fm-sidebar-item-selected {
+    background: #d3d3d3;
+}
+
+#fm-image-view-container {
+    overflow: hidden;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+
+#fm-image-view {
+    cursor: move;
+}
+
+#fm-action {
+    font-weight: bold;
+    line-height: 30px;
+
+    float: left;
+
+    width: 10em;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.fm-editor-argument-input {
+    width: 4em;
+}
+
+.fm-editor-arguments-separator {
+    display: inline-block;
+
+    width: 2em;
+    height: 1px;
+}
+
+.fm-editor-argument-container {
+    display: inline-block;
+}
+
+.fm-editor-percentage-label {
+    line-height: 30px;
+
+    display: inline-block;
+
+    width: 3em;
+    height: 30px;
+    margin-right: 1em;
+}

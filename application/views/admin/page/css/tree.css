@@ -1,0 +1,105 @@
+/* fix dynamenu bootstrap */
+span.dynatree-empty, 
+span.dynatree-vline, 
+span.dynatree-connector, 
+span.dynatree-expander, 
+span.dynatree-icon, 
+span.dynatree-checkbox, 
+span.dynatree-radio, 
+span.dynatree-drag-helper-img, 
+#dynatree-drop-marker {
+	margin-top: 3px;
+}
+#dynatree-drop-marker.dynatree-drop-after{
+	width:64px;
+	background-position: 0 -148px;
+	height: 28px;
+}
+#dynatree-drop-marker.dynatree-drop-before{
+	width:64px;
+	background-position: 0 -160px;
+	height: 28px;
+	margin-top: -10px;
+}
+span.dynatree-drop-target.dynatree-drop-before a
+{
+	background: #F2F7FD !important; /* light blue */
+	border-color: #B8D6FB; /* darker light blue */
+	color: black !important;
+}
+span.dynatree-drop-target.dynatree-drop-after a
+{
+	background: #F2F7FD !important; /* light blue */
+	border-color: #B8D6FB; /* darker light blue */
+	color: black !important;
+}
+
+.not-in-menu-page span.dynatree-icon  /* Collapsed Folder */
+{
+  background-image: url(<?=asset_url('/assets/admin/img/not-in-menu-page.png')?>);
+  background-size: 16px;
+}
+
+.system-page span.dynatree-icon  /* Collapsed Folder */
+{
+  background-image: url(<?=asset_url('/assets/admin/img/system-page.png')?>);
+  background-size: 16px;
+}
+
+.hidden-page span.dynatree-icon  /* Collapsed Folder */
+{
+  background-image: url(<?=asset_url('/assets/admin/img/hidden-page.png')?>);
+  background-size: 16px;
+}
+
+
+/* fix contextmenu bootstrap */
+ul.context-menu-list{
+	display: block;
+}
+ul.context-menu-list li.icon{
+	display: block;
+	max-width: 250px;
+	min-width: 120px;
+}
+.dropdown-menu > li > span {
+    clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 3px 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.dropdown-menu > li > span:hover,
+.dropdown-menu > li > span:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+.dropdown-menu .context-menu-separator {
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #FFFFFF;
+    height: 1px;
+    margin: 9px 1px;
+    overflow: hidden;
+}
+
+#error_message_template_holder{
+  display:none;
+}
+
+/* Scrollbalken op de tree */
+#tree{
+    height: 600px;
+    overflow: auto;
+    white-space: nowrap;
+}
